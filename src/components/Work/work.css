@@ -1,0 +1,136 @@
+.work__filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    margin-top: var(--mb-4);
+}
+
+.work__item {
+    cursor: pointer;
+    color: var(--darkpink);
+    padding: 0.25rem 0.75rem;
+    background-color: var(--offwhite);
+    border: 1px solid rgba(255, 155, 210, 1);
+    font-weight: 500;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+}
+
+.work__item:hover {
+    background-color: var(--darkpink);
+    color: var(--offwhite);
+}
+
+.active-work {
+    background-color: var(--darkpink);
+    color: var(--offwhite);
+}
+
+.work__container {
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+    justify-content: center;
+    margin-top: var(--mb-3);
+    position: relative;
+}
+
+.work__card {
+    position: relative;
+    background-color: var(--offwhite);
+    border: 1px solid rgba(214, 52, 132, 1);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    max-width: 330px;
+}
+
+.work__img {
+    width: 295px;
+    height: 170px;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1);
+}
+
+.work__title {
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    margin-bottom: var(--mb-0-5);
+    text-align: center;
+    color: var(--darkpink);
+}
+
+.work__desc {
+    margin-bottom: var(--mb-1);
+    font-size: var(--small-font-size);
+    color: rgba(64, 43, 58, 0.8);
+}
+
+
+.work__tool {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: var(--mb-1);
+}
+
+.work__toolitem {
+    border: 1px solid rgba(64, 43, 58, 1);
+    border-radius: 1rem;
+    padding: 0.3rem;
+    font-size: var(--tiny-font-size);
+    font-weight: 500;
+    background-color: var(--pink);
+}
+
+.work__icon {
+    color: var(--pink);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+}
+
+.work__icon:hover {
+    color: var(--darkpink);
+}
+
+/*reponsive*/
+@media screen and (max-width: 992px) {
+    .work__container{
+        justify-items: center;
+        gap:1rem;
+    }
+
+    .work__card{
+        padding: 1rem;
+    }
+    
+    .work__img {
+        margin-bottom: 0.75rem;
+    }
+
+    .work__title {
+        margin-bottom: 0.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .work__container {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+  }
+  
+  @media screen and (max-width: 576px) {
+    .work__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+  }
+  
+  @media screen and (max-width: 350px) {
+
+  }
+  
